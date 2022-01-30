@@ -84,9 +84,18 @@ section button {
   background-color: #9c69e2;
   color: white;
   border-radius: 30px;
-  padding: 15px 30px 15px 30px;
+  height: fit-content;
+  padding: 15px 0px 15px 0px;
   margin-top: 30px;
   cursor: pointer;
+}
+
+section button a {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
 }
 
 section button:hover {
