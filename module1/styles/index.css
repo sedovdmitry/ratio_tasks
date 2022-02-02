@@ -520,13 +520,13 @@
   }
 
   #features-wrapper {
-    padding-left: 70px;
+    padding-left: 90px;
   }
 
   .features-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
     flex-flow: column;
   }
@@ -701,13 +701,13 @@
   }
 
   #features-wrapper {
-    padding-left: 70px;
+    padding-left: 90px;
   }
 
   .features-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
     flex-flow: column;
   }
@@ -927,13 +927,13 @@
   }
 
   #features-wrapper {
-    padding-left: 70px;
+    padding-left: 90px;
   }
 
   .features-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
     flex-flow: column;
   }
@@ -1160,13 +1160,13 @@
   }
 
   #features-wrapper {
-    padding-left: 70px;
+    padding-left: 0px;
   }
 
   .features-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 50px;
     flex-flow: row;
   }
@@ -1307,5 +1307,82 @@
 
   #social-media-header {
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  #about-section img {
+    right: -48px;
+    width: 61%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  #about-section img {
+    bottom: -147px;
+    right: 53px;
+    width: 49%;
+  }
+
+  #about-section p {
+    width: 52%;
+    font-size: 26px;
+  }
+
+  section button a {
+    font-size: 20px;
+  }
+
+  section button {
+    margin-top: 60px;
+  }
+
+  #desription-section {
+    padding-top: 135px;
+  }
+
+  #feature1 {
+    width: 500px;
+    height: 415px;
+  }
+
+  #feature2 {
+    width: 500px;
+    height: 415px;
+  }
+
+  #feature3 {
+    width: 500px;
+    height: 415px;
+  }
+
+  #feature4 {
+    width: 500px;
+    height: 415px;
+  }
+
+  .description-text {
+    font-size: 25px;
+  }
+
+  .feature-text-content {
+    left: 200px;
+  }
+
+  .feature-decription {
+    font-size: 20px;
+    max-height: 190px;
+  }
+
+  .more-button {
+    left: 200px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .h3 {
+    font-size: 25px;
   }
 }
