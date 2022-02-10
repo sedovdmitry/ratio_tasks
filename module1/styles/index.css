@@ -1,5 +1,10 @@
+/*TODO: старайтесь не допускать опечатки в названиях классов, н-р, describtion -> description */
+
 /*Mobile styles*/
 @media only screen and (min-width: 320px) {
+/*TODO: не очень хорошее решение задавать всем элементам настройки, многие из которых невозможно установить
+     шрифтв, размер, начертание устанавливают тегам, которые могут содержать текст, например, p, h1-h6,
+     остальные - нет */
   * {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -27,6 +32,7 @@
 
   #header {
     width: 90%;
+    /*TODO: запись можно сократить: margin: 30px auto 5px; */
     margin: auto;
     margin-top: 30px;
     margin-bottom: 5px;
@@ -82,6 +88,7 @@
     color: white;
     border-radius: 30px;
     height: fit-content;
+/*TODO: нет необходимости указыват единицы измерения нулевым значениям 0px, 0% -> 0 */
     padding: 15px 0px 15px 0px;
     margin-bottom: 55px;
   }
@@ -112,6 +119,7 @@
   #description-wrapper {
     background-color: #fde8f4;
     border-radius: 0;
+/*TODO: запись можно сократить:  padding: 15px 15px 45px; или так: padding: 15px 15px 45px 15px; */
     padding: 15px;
     padding-bottom: 45px;
   }
@@ -262,6 +270,7 @@
   }
 
   .h3 {
+/*TODO: тут указан padding в одну строку - хорошо, для нулей не обязательно указывать px */
     padding: 40px 0 0px 15px;
     margin-top: 0;
     font-size: 20px;
@@ -335,7 +344,10 @@
   #reviews-wrapper::-webkit-scrollbar {
     display: none;
   }
-
+/*TODO: а в чем разница .review-card и .review-card-short? Дублирующийся код -- это очень плохо.
+    Классы можно спокойно указывать разным элементам, если им нужны одинаковые стили.
+     Если стили отличаются, то можно использовать класс с общими стилями и изменять отличающийся,
+     например, цветом с помощью дополнительным классом, где указан только цвет. Будет короче и проще */
   .review-card {
     padding: 20px;
     min-width: 290px;
@@ -344,6 +356,7 @@
     max-height: 250px;
     margin-right: 20px;
     border: 1px solid #9c69e2;
+/*TODO:  для нулей не обязательно указывать px */
     box-shadow: #6609e917 0px 20px;
     overflow-y: hidden;
   }
@@ -356,6 +369,7 @@
     max-height: 250px;
     margin-right: 20px;
     border: 1px solid #9c69e2;
+/*TODO:  для нулей не обязательно указывать px */
     box-shadow: #6609e917 0px 20px;
     overflow-y: hidden;
   }
@@ -402,8 +416,10 @@
     background-image: linear-gradient(45deg, #4b5d67b4, #eee);
     background-size: 100%;
     -webkit-background-clip: text;
+/*TODO: строку ниже можно удалить для -moz-background-clip нет свойства text (есть padding | border)*/
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+/*TODO: тоже строку ниже можно удалять */
     -moz-text-fill-color: transparent;
   }
 
